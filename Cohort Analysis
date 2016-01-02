@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<title>100% stacked area  V2 | amCharts</title>
 		<meta name="description" content="chart created using amCharts live editor" />
@@ -15,6 +16,7 @@
 >>>>>>> fca02bf427446271bf2248c82ca67580d2830182
 
 		<!-- amCharts javascript code -->
+		<!-- amCharts javascript code -->
 		<script type="text/javascript">
 			AmCharts.makeChart("chartdiv",
 				{
@@ -28,6 +30,7 @@
 					"trendLines": [],
 					"graphs": [
 						{
+							"animationPlayed": true,
 							"balloonText": "[[title]] of [[category]]:[[value]]",
 							"fillAlphas": 0.7,
 							"id": "AmGraph-1",
@@ -36,7 +39,9 @@
 							"valueField": "Paid"
 						},
 						{
+							"animationPlayed": true,
 							"balloonText": "[[title]] of [[category]]:[[value]]",
+							"cornerRadiusTop": 5,
 							"fillAlphas": 0.7,
 							"id": "AmGraph-2",
 							"lineAlpha": 0,
@@ -44,14 +49,18 @@
 							"valueField": "Interacted"
 						},
 						{
+							"animationPlayed": true,
 							"fillAlphas": 0.68,
 							"id": "AmGraph-3",
 							"title": "Logged in",
 							"valueField": "Logged in "
 						},
 						{
+							"animationPlayed": true,
 							"fillAlphas": 0.74,
 							"id": "AmGraph-4",
+							"negativeBase": 3,
+							"showBalloonAt": "open",
 							"title": "Signed up",
 							"valueField": "Signed up"
 						}
@@ -167,7 +176,6 @@
 				}
 			);
 		</script>
-		<!-- amCharts javascript sources -->
 		
 
 		<!-- amCharts javascript code -->
