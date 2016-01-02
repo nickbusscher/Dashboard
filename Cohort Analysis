@@ -1,50 +1,59 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>chart created with amCharts | amCharts</title>
+		<title>100% stacked area  V2 | amCharts</title>
 		<meta name="description" content="chart created using amCharts live editor" />
 
 		<!-- amCharts javascript sources -->
 		<script type="text/javascript" src="http://www.amcharts.com/lib/3/amcharts.js"></script>
 		<script type="text/javascript" src="http://www.amcharts.com/lib/3/amcharts.js"></script>
 		<script type="text/javascript" src="http://www.amcharts.com/lib/3/serial.js"></script>
+<<<<<<< HEAD
 		<script type="text/javascript" src="http://www.amcharts.com/lib/3/themes/light.js"></script>
 		<script type="text/javascript" src="http://www.amcharts.com/lib/3/funnel.js"></script>
+=======
+>>>>>>> fca02bf427446271bf2248c82ca67580d2830182
 
 		<!-- amCharts javascript code -->
 		<script type="text/javascript">
 			AmCharts.makeChart("chartdiv",
 				{
 					"type": "serial",
-					"categoryField": "category",
+					"categoryField": "Month",
 					"startDuration": 1,
-					"theme": "light",
 					"categoryAxis": {
-						"gridPosition": "start"
+						"gridPosition": "start",
+						"startOnAxis": true
 					},
 					"trendLines": [],
 					"graphs": [
 						{
 							"balloonText": "[[title]] of [[category]]:[[value]]",
-							"fillAlphas": 0.86,
+							"fillAlphas": 0.7,
 							"id": "AmGraph-1",
 							"lineAlpha": 0,
-							"title": "graph 1",
-							"valueField": "Registered"
+							"title": "Paid",
+							"valueField": "Paid"
 						},
 						{
-							"cornerRadiusTop": 6,
-							"fillAlphas": 0.42,
+							"balloonText": "[[title]] of [[category]]:[[value]]",
+							"fillAlphas": 0.7,
+							"id": "AmGraph-2",
+							"lineAlpha": 0,
+							"title": "Interacted",
+							"valueField": "Interacted"
+						},
+						{
+							"fillAlphas": 0.68,
 							"id": "AmGraph-3",
-							"title": "graph 3",
+							"title": "Logged in",
 							"valueField": "Logged in "
 						},
 						{
-							"fillAlphas": 0.69,
-							"fillColors": "#D6832F",
+							"fillAlphas": 0.74,
 							"id": "AmGraph-4",
-							"title": "graph 4",
-							"valueField": "Interacted"
+							"title": "Signed up",
+							"valueField": "Signed up"
 						}
 					],
 					"guides": [],
@@ -52,11 +61,13 @@
 						{
 							"id": "ValueAxis-1",
 							"stackType": "100%",
-							"title": "Axis title"
+							"title": "% of Users"
 						}
 					],
 					"allLabels": [],
-					"balloon": {},
+					"balloon": {
+						"showBullet": true
+					},
 					"legend": {
 						"enabled": true
 					},
@@ -64,51 +75,93 @@
 						{
 							"id": "Title-1",
 							"size": 15,
-							"text": "Chart Title"
+							"text": "Cohort Analysis"
 						}
 					],
 					"dataProvider": [
 						{
-							"Registered": 8,
 							"Month": "January",
-							"Logged in ": 10,
-							"Interacted": 58
+							"Paid": 8,
+							"Interacted": 5,
+							"Logged in ": 61,
+							"Signed up": 83
 						},
 						{
-							"Registered": 6,
 							"Month": "February",
-							"Logged in ": 83,
-							"Interacted": 17
+							"Paid": 6,
+							"Interacted": 7,
+							"Logged in ": 85,
+							"Signed up": 88
 						},
 						{
-							"Registered": 2,
 							"Month": "March",
-							"Logged in ": 82,
-							"Interacted": 28
+							"Paid": 2,
+							"Interacted": "6",
+							"Logged in ": 86,
+							"Signed up": 19
 						},
 						{
-							"Registered": 1,
 							"Month": "April",
-							"Logged in ": 52,
-							"Interacted": 89
+							"Paid": 1,
+							"Interacted": "7",
+							"Logged in ": 37,
+							"Signed up": 96
 						},
 						{
-							"Registered": 2,
 							"Month": "May",
-							"Logged in ": 47,
-							"Interacted": 30
+							"Paid": 2,
+							"Interacted": "8",
+							"Logged in ": 12,
+							"Signed up": 47
 						},
 						{
-							"Registered": 3,
 							"Month": "June",
-							"Logged in ": 75,
-							"Interacted": 76
+							"Paid": 3,
+							"Interacted": "7",
+							"Logged in ": 2,
+							"Signed up": 12
 						},
 						{
-							"Registered": 6,
 							"Month": "July",
-							"Logged in ": 22,
-							"Interacted": 83
+							"Paid": 6,
+							"Interacted": 8,
+							"Logged in ": 44,
+							"Signed up": 99
+						},
+						{
+							"Month": "August",
+							"Paid": "5",
+							"Interacted": "10",
+							"Logged in ": 72,
+							"Signed up": 66
+						},
+						{
+							"Month": "Sept.",
+							"Paid": "4",
+							"Interacted": "12",
+							"Logged in ": 44,
+							"Signed up": 58
+						},
+						{
+							"Month": "Oct.",
+							"Paid": "3",
+							"Interacted": "13",
+							"Logged in ": 42,
+							"Signed up": 54
+						},
+						{
+							"Month": "Nov.",
+							"Paid": "5",
+							"Interacted": "15",
+							"Logged in ": 18,
+							"Signed up": 65
+						},
+						{
+							"Month": "Dec.",
+							"Paid": "6",
+							"Interacted": "17",
+							"Logged in ": 91,
+							"Signed up": 11
 						}
 					]
 				}
