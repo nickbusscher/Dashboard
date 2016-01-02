@@ -2,19 +2,15 @@
 <html>
 
 	<head>
-		<title>100% stacked area  V2 | amCharts</title>
+		<title>Perlegoo Dasgboard</title>
 		<meta name="description" content="chart created using amCharts live editor" />
 
 		<!-- amCharts javascript sources -->
 		<script type="text/javascript" src="http://www.amcharts.com/lib/3/amcharts.js"></script>
 		<script type="text/javascript" src="http://www.amcharts.com/lib/3/amcharts.js"></script>
 		<script type="text/javascript" src="http://www.amcharts.com/lib/3/serial.js"></script>
-<<<<<<< HEAD
 		<script type="text/javascript" src="http://www.amcharts.com/lib/3/themes/light.js"></script>
 		<script type="text/javascript" src="http://www.amcharts.com/lib/3/funnel.js"></script>
-=======
->>>>>>> fca02bf427446271bf2248c82ca67580d2830182
-
 		<!-- amCharts javascript code -->
 		<!-- amCharts javascript code -->
 		<script type="text/javascript">
@@ -230,6 +226,7 @@
 	</head>
 	<body>
 		<div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+		<h1>Onboaring Funnel</h1>
 		<div id="onboarding" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
 	</body>
 </html>
