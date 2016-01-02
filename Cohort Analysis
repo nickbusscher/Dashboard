@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Perlegoo Dashboard</title>
-		<meta name="description" content="chart created using amCharts live editor" />
+		<meta name="description" content="Dashboard to track progress" />
 
 		<!-- amCharts javascript sources -->
 		<script type="text/javascript" src="http://www.amcharts.com/lib/3/amcharts.js"></script>
@@ -10,6 +10,7 @@
 		<script type="text/javascript" src="http://www.amcharts.com/lib/3/themes/light.js"></script>
 		<script type="text/javascript" src="http://www.amcharts.com/lib/3/funnel.js"></script>
 		<script type="text/javascript" src="Onboarding.js"></script>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css">
 
 		<!-- amCharts javascript code -->
 		<script type="text/javascript">
@@ -169,7 +170,7 @@
 	</head>
 	<body>
 		<div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
-		<h1>Onboaring Funnel</h1>
+		<h1>Onboarding Funnel</h1>
 		<div id="onboarding" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
 	</body>
 </html>
