@@ -9,6 +9,8 @@
 		<script type="text/javascript" src="http://www.amcharts.com/lib/3/serial.js"></script>
 		<script type="text/javascript" src="http://www.amcharts.com/lib/3/themes/light.js"></script>
 		<script type="text/javascript" src="http://www.amcharts.com/lib/3/funnel.js"></script>
+		<script type="text/javascript" src="Onboarding.js"></script>
+
 		<!-- amCharts javascript code -->
 		<script type="text/javascript">
 			AmCharts.makeChart("chartdiv",
@@ -163,57 +165,7 @@
 			);
 		</script>
 		<!-- amCharts javascript sources -->
-		
-
-		<!-- amCharts javascript code -->
-		<script type="text/javascript">
-			AmCharts.makeChart("onboarding",
-				{
-					"type": "funnel",
-					"balloonText": "[[title]]:<b>[[value]]</b>",
-					"neckHeight": "30%",
-					"neckWidth": "40%",
-					"marginLeft": 15,
-					"marginRight": 160,
-					"maxLabelWidth": 205,
-					"titleField": "title",
-					"valueField": "value",
-					"allLabels": [],
-					"balloon": {},
-					"titles": [],
-					"dataProvider": [
-						{
-							"title": "New website visitors",
-							"value": 300
-						},
-						{
-							"title": "Sign up for trial",
-							"value": 123
-						},
-						{
-							"title": "Sign up for paid plan",
-							"value": 98
-						},
-						{
-							"title": "",
-							"value": ""
-						},
-						{
-							"title": "",
-							"value": ""
-						},
-						{
-							"title": "",
-							"value": ""
-						},
-						{
-							"title": "",
-							"value": ""
-						}
-					]
-				}
-			);
-		</script>
+	
 	</head>
 	<body>
 		<div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
